@@ -5,7 +5,8 @@ module.exports = ({ env }) => {
     ? "postgres"
     : env("DATABASE_CLIENT", "sqlite");
 
-  const connections = {
+
+    const connections = {
     postgres: {
       connection: {
         connectionString: env("DATABASE_URL"),
